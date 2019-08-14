@@ -14,7 +14,7 @@ class Home extends React.Component {
         this.setState({
           allCountries: res
         })
-        console.log(this.state.linguagens)
+        console.log(this.state.allCountries)
       })
   }
 
@@ -24,8 +24,8 @@ class Home extends React.Component {
         <ul>
         {this.state.linguagens.map(item => (
           <li key={item.id}>
-           <p><b>Linguagem: </b> {item.nome}</p>
-           <p><b>Criador: </b> {item.creator}</p>
+           <p><b>Country: </b> {item.country}</p>
+           <p><b>Bandeira: </b> {item.flag}</p>
           </li>
         ))}
         </ul>

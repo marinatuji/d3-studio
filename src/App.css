@@ -1,10 +1,11 @@
 .App {
   margin: 0 auto;
-  width: 67.5%;
+  width: 100%;
   text-align: left;
 }
 
-.App .title {
+.App-title {
   font-size: 1,5 em;
+  font-family: 'Nunito Sans';
   color: hsl(0,0,100);
 }
