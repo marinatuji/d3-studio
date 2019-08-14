@@ -5,6 +5,7 @@ import ComponentNavBar from './NavBar'
 import Home from './Home';
 import Detail from './Detail'
 import InputSearch from './InputSearch';
+import CountryList from './CountryList';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       </header>
       <section>
         <InputSearch></InputSearch>
+      </section>
+      <section>
+        <CountryList />
       </section>
     </div>
   );

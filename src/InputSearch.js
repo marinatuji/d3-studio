@@ -3,7 +3,6 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import SearchIcon from '@material-ui/icons/Search';
-import Grid from '@material-ui/core/Grid';
 import FormControl from '@material-ui/core/Grid'
 
 const useStyles = makeStyles(theme => ({
@@ -13,11 +12,11 @@ const useStyles = makeStyles(theme => ({
     flexWrap: 'wrap',
   },
   textField: {
-    marginLeft: theme.spacing(7),
-    marginRight: theme.spacing(7),
+    marginLeft: theme.spacing(5),
+    marginRight: theme.spacing(5),
   },
   search: {
-    position: 'relative',
+    // position: 'relative',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: fade(theme.palette.common.white, 0.15),
     '&:hover': {
@@ -33,7 +32,7 @@ const useStyles = makeStyles(theme => ({
   searchIcon: {
     width: theme.spacing(2),
     height: '100%',
-    position: 'absolute',
+    // position: 'absolute',
     pointerEvents: 'none',
     display: 'flex',
     alignItems: 'center',
@@ -49,32 +48,31 @@ export default function InputSearch() {
   const [values, setValues] = React.useState({
     country: '',
   });
-
+  
   const handleChange = country => event => {
     setValues({ ...values, [country]: event.target.value });
   };
 
   return (
     <div>
-    <FormControl className={classes.container} autoComplete="off" noValidate >
-    <Grid container spacing={1} alignItems="flex-end">
-      <Grid item>
-        <SearchIcon />
-      </Grid>
-      <Grid item>
+      <FormControl className={classes.container} autoComplete="off" noValidate >
         <TextField
           alignItems="flex-end"
           className={classes.textField}
           id="input-with-icon-grid"
-          label="Search for a country..."
+          placeholder="Search for a country..."
+          // label="Search for a country..."
           type="text"
+          InputProps={{
+            startAdornment: <InputAdornment position="start">
+              <SearchIcon />
+            </InputAdornment>
+          }}
           onChange={handleChange('country')}
           margin="normal"
-        variant="outlined"
+          variant="outlined"
         />
-      </Grid>
-    </Grid>
-    </FormControl>
+      </FormControl>
     </div>
 
   )

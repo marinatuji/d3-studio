@@ -1,10 +1,11 @@
 .App {
+  /* background-color: hsl(0,0,52); */
   margin: 0 auto;
   width: 100%;
   text-align: left;
 }
 
-.App-title {
+.App-header {
   font-size: 1,5 em;
   font-family: 'Nunito Sans';
   color: hsl(0,0,100);
