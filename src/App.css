@@ -10,3 +10,9 @@
   font-family: 'Nunito Sans';
   color: hsl(0,0,100);
 }
+
+.Card-container {
+  width: 18,5%;
+  height: 33%;
+  border: 3vw;
+}

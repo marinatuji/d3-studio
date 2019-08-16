@@ -1,9 +1,8 @@
 import React from 'react';
-import { makeStyles, hslToRgb } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import { pink } from '@material-ui/core/colors';
 // import { ThemeProvider } from '@material-ui/styles';
 
 const useStyles = makeStyles(theme => ({
@@ -12,7 +11,10 @@ const useStyles = makeStyles(theme => ({
     // backgroundColor: hsl(0,0,100)
   },
   navTitle: {
-    marginLeft: theme.spacing(3),
+    marginLeft: theme.spacing(2),
+    fontFamily: "Nunito sans",
+    fontWeight: "bold",
+    fontSize: 16,
   }
 }));
 
@@ -24,7 +26,7 @@ export default function ComponentNavBar() {
 
       <AppBar position="static" color="white">
         <Toolbar>
-            <Typography variant="h6" color="inherit" className={classes.navTitle}>
+            <Typography variant="h6" className={classes.navTitle}>
               Where in the world?
             </Typography>
         </Toolbar>

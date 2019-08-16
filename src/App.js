@@ -1,11 +1,13 @@
 import React from 'react';
-import {BrouserRouter, Route, Link} from 'react-router-dom';
+// import {BrouserRouter, Route, Link} from 'react-router-dom';
 import './App.css';
 import ComponentNavBar from './NavBar'
-import Home from './Home';
-import Detail from './Detail'
+// import Home from './Home';
+// import Detail from './Detail'
 import InputSearch from './InputSearch';
-import CountryList from './CountryList';
+// import CountryList from './CountryList';
+import CardList from './CardList';
+// import Box from '@material-ui/core/Box';
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
         <InputSearch></InputSearch>
       </section>
       <section>
-        <CountryList />
+        <CardList/>
+        {/* <CountryList /> */}
       </section>
     </div>
   );
