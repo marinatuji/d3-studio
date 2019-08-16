@@ -7,15 +7,12 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-// import CardList from './CardList';
 
 class CardDetail extends React.Component {
-
 
   render() {
 
     return (
-      // <Box display="flex" flexDirection="column" alignItems="center" width="100%">
       <div>
         {this.state.database.map(element => {
           return (
@@ -46,10 +43,7 @@ class CardDetail extends React.Component {
                 </CardActionArea>
                 <CardActions>
                   <Button size="small" color="primary">
-                    Share
-                </Button>
-                  <Button size="small" color="primary">
-                    Learn More
+                    Back
                 </Button>
                 </CardActions>
               </Card>
@@ -58,7 +52,6 @@ class CardDetail extends React.Component {
         }
         )}
       </div>
-      // </Box>
     )
   }
 }

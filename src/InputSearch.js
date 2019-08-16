@@ -3,7 +3,6 @@ import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import SearchIcon from '@material-ui/icons/Search';
 import FormControl from '@material-ui/core/Grid';
-// import CardDetail from './CardDetail';
 class InputSearch extends React.Component {
 
   constructor(props) {

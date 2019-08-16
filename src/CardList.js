@@ -25,7 +25,6 @@ class CardList extends React.Component {
 
   render() {
     return (
-      // <Box display="flex" flexDirection="column" alignItems="center" width="100%">
       <div>  
       {this.state.database.map(element => {
           return (
@@ -56,10 +55,7 @@ class CardList extends React.Component {
                 </CardActionArea>
                 <CardActions>
                   <Button size="small" color="primary">
-                    Share
-                </Button>
-                  <Button size="small" color="primary">
-                    Learn More
+                    Details
                 </Button>
                 </CardActions>
               </Card>
@@ -68,7 +64,6 @@ class CardList extends React.Component {
         }
         )}
       </div>  
-      // </Box>
     )
   }
 }
